@@ -1,0 +1,46 @@
+# JobTailor - Requirements
+# Python 3.11+
+
+# GUI
+PySide6>=6.7.0
+
+# LLM / HTTP
+openai>=1.30.0
+httpx>=0.27.0
+
+# Structured output / validation
+pydantic>=2.7.0
+
+# PDF inspection
+PyMuPDF>=1.24.0
+
+# Storage
+# sqlite3 is stdlib
+
+# Secrets management
+keyring>=25.2.0
+
+# Platform paths
+platformdirs>=4.2.2
+
+# Web search (optional - Tavily)
+tavily-python>=0.3.3
+
+# LaTeX escaping utility helper
+# (we implement ourselves, but pylatexenc is handy for edge cases)
+pylatexenc>=2.10
+
+# Packaging (dev only)
+pyinstaller>=6.8.0
+
+# Tests
+pytest>=8.2.0
+pytest-qt>=4.4.0
+
+# JSON repair
+json-repair>=0.28.0
+
+# Logging (stdlib rotating handler used, no extra dep)
+
+# Optional - WHOIS domain age check
+python-whois>=0.9.4

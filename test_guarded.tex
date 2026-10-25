@@ -1,0 +1,325 @@
+\documentclass[a4paper,11pt]{article}
+
+% =========================================================
+% PACKAGES
+% =========================================================
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[
+    a4paper,
+    top=0.55in,
+    bottom=0.55in,
+    left=0.62in,
+    right=0.62in
+]{geometry}
+
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{tabularx}
+
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+% =========================================================
+% GENERAL FORMATTING
+% =========================================================
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\urlstyle{same}
+
+% =========================================================
+% SECTION FORMATTING
+% =========================================================
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+% More breathing room around sections
+\titlespacing*{\section}
+  {0pt}
+  {9pt}
+  {5pt}
+
+% =========================================================
+% LIST FORMATTING
+% =========================================================
+
+\setlist[itemize]{
+    leftmargin=0.20in,
+    itemsep=2.5pt,
+    topsep=2pt,
+    parsep=0pt,
+    partopsep=0pt
+}
+
+% =========================================================
+% CUSTOM COMMANDS
+% =========================================================
+
+% ---------------------------------------------------------
+% Experience heading
+% ---------------------------------------------------------
+
+\newcommand{\resumeSubheading}[4]{
+    \textbf{#1} \hfill #2 \\[1pt]
+    \textit{#3} \hfill \textit{#4}
+    \vspace{3pt}
+}
+
+% ---------------------------------------------------------
+% Project heading
+% ---------------------------------------------------------
+
+\newcommand{\resumeProjectHeading}[3]{
+    \textbf{#1} \hfill #2 \\[2pt]
+    \textit{Technologies: #3}
+    \vspace{2pt}
+}
+
+% ---------------------------------------------------------
+% Resume bullet
+% ---------------------------------------------------------
+
+\newcommand{\resumeItem}[1]{
+    \item #1
+}
+
+% ---------------------------------------------------------
+% Space after project
+% ---------------------------------------------------------
+
+\newcommand{\resumeProjectEnd}{
+    \vspace{4pt}
+}
+
+% =========================================================
+% DOCUMENT
+% =========================================================
+
+\begin{document}
+
+% =========================================================
+% HEADER
+% =========================================================
+
+\begin{center}
+
+    {\LARGE \textbf{AKHIL T V}} \\[5pt]
+
+    \textbf{Job Role} \\[5pt]
+
+    \small
+    +91 7510114772
+    \hspace{0.3cm} | \hspace{0.3cm}
+    \href{mailto:akhilthottekkat135@gmail.com}
+    {akhilthottekkat135@gmail.com}
+    \hspace{0.3cm} | \hspace{0.3cm}
+    \href{https://www.linkedin.com/in/akhil-t-v}
+    {linkedin.com/in/akhil-t-v}
+    \hspace{0.3cm} | \hspace{0.3cm}
+    \href{https://yourportfolio.com}
+    {Portfolio}
+
+\end{center}
+
+\vspace{-0.2cm}
+
+% =========================================================
+% PROFESSIONAL SUMMARY
+% =========================================================
+
+\section*{Professional Summary}
+\vspace{0.04cm}
+
+% 3--4 lines.
+% Recommended hierarchy:
+% 1. Professional identity / target role
+% 2. Core analytical or functional strengths
+% 3. Relevant technical / data science knowledge
+% 4. Value or type of work you can contribute
+
+[3--4 line professional summary tailored to the target role.]
+
+% =========================================================
+% SKILLS
+% =========================================================
+
+\section*{Skills}
+\vspace{0.04cm}
+
+\textbf{Programming \& Analytics:}
+% Python, SQL, Excel, Pandas, NumPy, etc.
+
+\\[2pt]
+
+\textbf{Machine Learning:}
+% Scikit-learn, XGBoost, Feature Engineering, Model Evaluation, etc.
+
+\\[2pt]
+
+\textbf{BI \& Visualization:}
+% Power BI, DAX, Tableau, Matplotlib, Seaborn, etc.
+
+\\[2pt]
+
+\textbf{Databases \& Tools:}
+% MySQL, MongoDB, Git, GitHub, Jupyter Notebook, VS Code, etc.
+
+\\[2pt]
+
+\textbf{Business \& QA:}
+% Business Analysis, Requirements Analysis, Statistical Testing,
+% Test Case Design, Functional Testing, Regression Testing, etc.
+
+% =========================================================
+% EXPERIENCE
+% =========================================================
+
+\section*{Experience}
+\vspace{0.04cm}
+
+\resumeSubheading
+{Data Science Intern}{Dec 2025 -- Feb 2026}
+{Codec Technologies Pvt. Ltd.}{India}
+
+\begin{itemize}
+    \resumeItem{Concise achievement/action bullet describing a significant responsibility or contribution.}
+    \resumeItem{Concise technical bullet showing tools, methods, or workflows used.}
+    \resumeItem{Concise business/analytical bullet showing how the work supported a practical outcome.}
+    \resumeItem{Concise collaboration, quality, automation, or process-improvement bullet.}
+\end{itemize}
+
+% =========================================================
+% PROJECTS
+% =========================================================
+
+\section*{Projects}
+\vspace{0.04cm}
+
+% ---------------------------------------------------------
+% PROJECT 1
+% ---------------------------------------------------------
+
+\resumeProjectHeading
+{Project Title}
+{
+    \href{https://github.com/yourusername/project}{GitHub}
+    \,|\, 
+    \href{https://your-live-demo.com}{Live Demo}
+}
+{Python, SQL, Power BI}
+
+\begin{itemize}
+    \resumeItem{Concise analytical/business bullet describing the problem and analysis performed.}
+    \resumeItem{Concise technical bullet describing the key method, model, or implementation.}
+    \resumeItem{Concise result/insight bullet containing a meaningful outcome or measurable finding.}
+\end{itemize}
+
+\resumeProjectEnd
+
+\vspace{0.18cm}
+% ---------------------------------------------------------
+% PROJECT 2
+% ---------------------------------------------------------
+
+\resumeProjectHeading
+{Project Title}
+{
+    \href{https://github.com/yourusername/project}{GitHub}
+    \,|\, 
+    \href{https://your-live-demo.com}{Live Demo}
+}
+{Python, Machine Learning, Streamlit}
+
+\begin{itemize}
+    \resumeItem{Concise analytical/business bullet describing the problem and analysis performed.}
+    \resumeItem{Concise technical bullet describing the key method, model, or implementation.}
+    \resumeItem{Concise result/insight bullet containing a meaningful outcome or measurable finding.}
+\end{itemize}
+
+\resumeProjectEnd
+
+\vspace{0.18cm}
+% ---------------------------------------------------------
+% PROJECT 3
+% ---------------------------------------------------------
+
+\resumeProjectHeading
+{Project Title}
+{
+    \href{https://github.com/yourusername/project}{GitHub}
+    \,|\, 
+    \href{https://your-live-demo.com}{Live Demo}
+}
+{Python, SQL, Power BI}
+
+\begin{itemize}
+    \resumeItem{Concise analytical/business bullet describing the problem and analysis performed.}
+    \resumeItem{Concise technical bullet describing the key method, model, or implementation.}
+    \resumeItem{Concise result/insight bullet containing a meaningful outcome or measurable finding.}
+\end{itemize}
+
+\resumeProjectEnd
+
+% =========================================================
+% LEADERSHIP
+% =========================================================
+
+% Include this section only when leadership experience is
+% relevant to the target job or adds meaningful evidence.
+
+% \section*{Leadership}
+% \vspace{0.04cm}
+
+% \textbf{Leadership Role / Position}
+% \hfill Organization / Institution \\[2pt]
+% \textit{Leadership activity or responsibility}
+% \hfill Date / Duration
+
+% \begin{itemize}
+%     \resumeItem{Led or coordinated a team, initiative, or event, demonstrating relevant leadership and organizational skills.}
+%     \resumeItem{Organized activities or managed responsibilities while coordinating people, resources, or timelines.}
+% \end{itemize}
+
+% =========================================================
+% EDUCATION
+% =========================================================
+
+\section*{Education}
+\vspace{0.04cm}
+
+\textbf{Bachelor of Technology in Computer Science}
+\hfill 2021 -- 2025 \\[2pt]
+Vidya Academy of Science and Technology
+\hfill Kerala, India \\[2pt]
+CGPA: 8.24/10
+
+% =========================================================
+% CERTIFICATIONS
+% =========================================================
+
+% Uncomment when certifications are relevant to the
+% particular tailored version.
+
+% \section*{Certifications}
+% \vspace{0.04cm}
+
+% \begin{itemize}
+%     \resumeItem{\textbf{Certification Name} -- Issuing Organization}
+%     \resumeItem{\textbf{Certification Name} -- Issuing Organization}
+% \end{itemize}
+
+\end{document}

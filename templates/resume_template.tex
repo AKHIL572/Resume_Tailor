@@ -1,0 +1,200 @@
+\documentclass[a4paper,11pt]{article}
+
+% =========================================================
+% PACKAGES
+% =========================================================
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[
+    a4paper,
+    top=0.55in,
+    bottom=0.55in,
+    left=0.52in,
+    right=0.52in
+]{geometry}
+
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{tabularx}
+
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+% =========================================================
+% GENERAL FORMATTING
+% =========================================================
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\urlstyle{same}
+
+% =========================================================
+% SECTION FORMATTING
+% =========================================================
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+% More breathing room around sections
+\titlespacing*{\section}
+  {0pt}
+  {9pt}
+  {5pt}
+
+% =========================================================
+% LIST FORMATTING
+% =========================================================
+
+\setlist[itemize]{
+    leftmargin=0.20in,
+    itemsep=2.5pt,
+    topsep=2pt,
+    parsep=0pt,
+    partopsep=0pt
+}
+
+% =========================================================
+% CUSTOM COMMANDS
+% =========================================================
+
+% ---------------------------------------------------------
+% Experience heading
+% ---------------------------------------------------------
+
+\newcommand{\resumeSubheading}[4]{
+    \textbf{#1} \hfill #2 \\[1pt]
+    \textit{#3} \hfill \textit{#4}
+    \vspace{3pt}
+}
+
+% ---------------------------------------------------------
+% Project heading
+% ---------------------------------------------------------
+
+\newcommand{\resumeProjectHeading}[3]{
+    \textbf{#1} \hfill #2 \\[2pt]
+    \textit{Technologies: #3}
+    \vspace{2pt}
+}
+
+% ---------------------------------------------------------
+% Resume bullet
+% ---------------------------------------------------------
+
+\newcommand{\resumeItem}[1]{
+    \item #1
+}
+
+% ---------------------------------------------------------
+% Space after project
+% ---------------------------------------------------------
+
+\newcommand{\resumeProjectEnd}{
+    \vspace{3pt}
+}
+
+% =========================================================
+% DOCUMENT
+% =========================================================
+
+\begin{document}
+
+% =========================================================
+% HEADER
+% =========================================================
+
+\begin{center}
+
+    {\Huge \textbf{AKHIL T V}} \\[4pt]
+
+    \textbf{%%JOB_ROLE%%} \\[3pt]
+
+    \small
+    +91 7510114772
+    \hspace{0.3cm} | \hspace{0.3cm}
+    \href{mailto:akhilthottekkat135@gmail.com}
+    {akhilthottekkat135@gmail.com}
+    \hspace{0.3cm} | \hspace{0.3cm}
+    \href{https://www.linkedin.com/in/akhil-t-v}
+    {linkedin.com/in/akhil-t-v}
+    \hspace{0.3cm} | \hspace{0.3cm}
+    \href{%%PORTFOLIO_URL%%}
+    {Portfolio}
+
+\end{center}
+
+\vspace{-0.10cm}
+
+% =========================================================
+% PROFESSIONAL SUMMARY
+% =========================================================
+
+\section*{Professional Summary}
+
+%%SUMMARY%%
+
+% =========================================================
+% SKILLS
+% =========================================================
+
+\section*{Skills}
+
+%%SKILLS%%
+
+% =========================================================
+% EXPERIENCE
+% =========================================================
+
+\section*{Experience}
+
+\resumeSubheading
+{Data Science Intern}{Dec 2025 -- Feb 2026}
+{Codec Technologies Pvt. Ltd.}{India}
+
+%%EXPERIENCE%%
+
+% =========================================================
+% PROJECTS
+% =========================================================
+
+\section*{Projects}
+
+%%PROJECTS%%
+
+% =========================================================
+% LEADERSHIP
+% =========================================================
+
+%%LEADERSHIP%%
+
+% =========================================================
+% EDUCATION (Fixed)
+% =========================================================
+
+\section*{Education}
+
+\textbf{Bachelor of Technology in Computer Science}
+\hfill 2021 -- 2025 \\[2pt]
+Vidya Academy of Science and Technology
+\hfill Kerala, India \\[2pt]
+CGPA: 8.24/10
+
+% =========================================================
+% CERTIFICATIONS
+% =========================================================
+
+%%CERTIFICATIONS%%
+
+\end{document}
